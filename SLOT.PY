@@ -28,9 +28,8 @@ def send_notification(receiver_email,table_data,pincode):
     import smtplib, ssl
     from email.mime.text import MIMEText
     from email.mime.multipart import MIMEMultipart
-
+#Chnage Sender mail and password
     sender_email = "XYZ@GMAIL.COM"
-#        
     password = "XYZ"
 
     message = MIMEMultipart("alternative")
@@ -61,7 +60,9 @@ def send_notification(receiver_email,table_data,pincode):
 
 from datetime import datetime
 from datetime import timedelta
+#Gmail where you want notification
 receiver_mail ="XYZ@gmail.com"
+#pincode of your location
 pincode = '110001'
 check_date = (datetime.now() + timedelta(days=1)).strftime("%d-%m-%Y")
 slot_data= convert_into_table_data(get_slot_data(pincode,check_date))
