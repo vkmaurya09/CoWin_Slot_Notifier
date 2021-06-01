@@ -29,9 +29,9 @@ def send_notification(receiver_email,table_data,pincode):
     from email.mime.text import MIMEText
     from email.mime.multipart import MIMEMultipart
 
-    sender_email = "igwolf.yt09@gmail.com"
-#         receiver_email = "itsvinay09@gmail.com"
-    password = "spxwolf@1999"
+    sender_email = "XYZ@GMAIL.COM"
+#        
+    password = "XYZ"
 
     message = MIMEMultipart("alternative")
     message["Subject"] = "Slot Avaliable at pincode :"+pincode
@@ -61,7 +61,7 @@ def send_notification(receiver_email,table_data,pincode):
 
 from datetime import datetime
 from datetime import timedelta
-receiver_mail ="itsvinay09@gmail.com"
+receiver_mail ="XYZ@gmail.com"
 pincode = '110001'
 check_date = (datetime.now() + timedelta(days=1)).strftime("%d-%m-%Y")
 slot_data= convert_into_table_data(get_slot_data(pincode,check_date))
