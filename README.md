@@ -1,7 +1,7 @@
 # CoWin_Slot_Notifier
-Change sender and reciever Email address
-Sender password 
-pincode
+Change sender and reciever Email address ,
+Sender password  ,
+pincode    
 
 OutPut Like This :
 
